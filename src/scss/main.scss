@@ -28,23 +28,34 @@ body {
   color: #f00;
   border-radius: 19px;
   border: 2px solid #f00;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .button.is-active {
   background-color: #f00;
   color: white;
+  transition: opacity 0.5s ease-in-out;
 }
+
 .icon {
   font-family: "Font Awesome 6 Free";
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
+  transition: none;
+}
+.icon.transition {
+  transition: color 0.5s ease-out;
 }
 .like {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
+  transition: none;
+}
+.like.transition {
+  transition: color 0.5s ease-out;
 }
 .number {
   color: #000;
@@ -52,9 +63,9 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-}
-.number.is-active {
-  color: white;
+  transition: none;
 }
 
-// A finir (metre les animation js et nombre qui augmentent )
+.number.transition {
+  transition: color 0.5s ease-out;
+}
